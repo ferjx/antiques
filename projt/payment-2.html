@@ -90,49 +90,109 @@
 					<div class="buy">
 						<form action="#">
 
-							<div class="buy-cards row justify-content-center justify-content-md-start">
-								<label class="buy-cards__item-wrap col-12 col-sm-6 col-md-4 col-lg-3">
-									<input type="radio" name="input-delivery" value="Нава пошта" checked>
-									<div class="buy-cards__tRadio delivery__card">
-										<div class="buy-cards__img">
-											<img src="img/delivery-1.png" alt="нова пошта">
-										</div>
-									</div>
-								</label>
-								<label class="buy-cards__item-wrap col-12 col-sm-6 col-md-4 col-lg-3">
-									<input type="radio" name="input-delivery" value="Доставка в определенный район">
-									<div class="buy-cards__tRadio delivery__card">
-										<b>Доставка в определенный <br>район</b>
-									</div>
-								</label>
-								<label class="buy-cards__item-wrap col-12 col-sm-6 col-md-4 col-lg-3">
-									<input type="radio" name="input-delivery" value="Доставка в определенный район">
-									<div class="buy-cards__tRadio delivery__card">
-										<b>Курьером до двери <br>(+200грн)</b>
-										<span class="buy-tooltip" title="Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Назад напоивший, строчка своих обеспечивает возвращайся залетают букв! Которое текста свое прямо большого предложения! Вдали переписали всеми злых снова заглавных.">?</span>
-									</div>
-								</label>
-							</div><!-- / buy-cards -->
+							<div id="tabs-form" class="tabs-form">
+								<ul class="row justify-content-center justify-content-md-start">
+									<li class="col-12 col-sm-6 col-md-4 col-lg-3">
+										<a href="#tabs-1">
+											<span class="delivery__card">
+												<img src="img/delivery-1.png" alt="">
+											</span>
+										</a>
+									</li>
+									<li class="col-12 col-sm-6 col-md-4 col-lg-3">
+										<a href="#tabs-2">
+										<span class="delivery__card">
+											<b>Доставка в определенный район</b>
+										</span>
+										</a>
+									</li>
+									<li class="col-12 col-sm-6 col-md-4 col-lg-3">
+										<a href="#tabs-3">
+											<span class="delivery__card">
+												<b>Курьером до двери <br>(+200грн)</b>
+												<span class="buy-tooltip" title="Melnik Ivan Petrovitch ; Vul. Lisova, 2, kv.3 ; s. Ivanovka, Semenivsky r-n, ; TCHERNIGIVSKA OBL. ; 15432 ; UKRAINE">?</span>
+											</span>
+										</a>
+									</li>
+								</ul>
+								<div id="tabs-1" class="row">
+									<div class="delivery-form col-lg-6 col-md-8">
 
-							<div class="delivery-form">
-								<label class="delivery-form__wrap">
-									<span class="delivery-form__label">Отделение <abbr title="Новая Почта">НП</abbr>: </span>
-									<span class="delivery-form__input">
-										<input type="text" value=""  placeholder="Отд. #25  ул.Киевская, 24" required>
-									</span>
-								</label>
-								<label class="delivery-form__wrap">
-									<span class="delivery-form__label">Электронная почта: </span>
-									<span class="delivery-form__input">
-										<input type="email" value=""  placeholder="mail@gmail.com" required><br>
-										<small>На почту вам будут высланы данные по заказу</small>
-									</span>
-								</label>
-							</div><!-- / delivery-form -->
-								
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Отделение <abbr title="Новая Почта">НП</abbr>: </span>
+											<span class="status-form__input-box errno-active">
+												<input type="text" value="" placeholder="Отд. #25  ул.Киевская, 24">
+												<span class="status-form__input-errno">Введите адрес</span>
+											</span>
+										</label>
+
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Электронная почта: </span>
+											<span class="delivery-form__input">
+												<span class="status-form__input-box errno-active">
+													<input type="email" value="" placeholder="mail@gmail.com">
+													<span class="status-form__input-errno">Укажите E-mail</span>
+												</span>
+												<small>На почту вам будут высланы данные по заказу</small>
+											</span>
+										</label>
+
+									</div><!-- / delivery-form -->
+								</div>
+								<div id="tabs-2" class="row">
+									<div class="delivery-form col-lg-6 col-md-8">
+
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Укажите район: </span>
+											<span class="status-form__input-box errno-active">
+												<input type="text" value="" placeholder="ул. Парковая, 45">
+												<span class="status-form__input-errno">Введите адрес</span>
+											</span>
+										</label>
+
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Электронная почта: </span>
+											<span class="delivery-form__input">
+												<span class="status-form__input-box errno-active">
+													<input type="email" value="" placeholder="mail@gmail.com">
+													<span class="status-form__input-errno">Укажите E-mail</span>
+												</span>
+												<small>На почту вам будут высланы данные по заказу</small>
+											</span>
+										</label>
+
+									</div><!-- / delivery-form -->
+								</div>
+								<div id="tabs-3" class="row">
+									<div class="delivery-form col-lg-6 col-md-8">
+
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Полный адрес: </span>
+											<span class="status-form__input-box errno-active">
+												<input type="text" value="" placeholder="ул. Парковая, 45/4
+Киев, Украина, 02000">
+												<span class="status-form__input-errno">Введите адрес</span>
+											</span>
+										</label>
+
+										<label class="delivery-form__wrap">
+											<span class="delivery-form__label">Электронная почта: </span>
+											<span class="delivery-form__input">
+												<span class="status-form__input-box errno-active">
+													<input type="email" value="" placeholder="mail@gmail.com">
+													<span class="status-form__input-errno">Укажите E-mail</span>
+												</span>
+												<small>На почту вам будут высланы данные по заказу</small>
+											</span>
+										</label>
+
+									</div><!-- / delivery-form -->
+								</div>
+							</div><!-- / tabs-form -->
+
 							<hr><br>
 							<div class="btn order-btn">
-								<input type="submit" value="Далее">
+								<input type="submit" id="validate" value="Далее">
 							</div>
 
 						</form>
@@ -260,7 +320,7 @@
 				</label>
 
 				<div class="btn statuss-btn">
-					<input type="button" value="Показать статус">
+					<input type="button" id="validate" value="Показать статус">
 				</div>
 
 			</form>
